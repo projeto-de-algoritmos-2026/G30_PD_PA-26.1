@@ -23,7 +23,10 @@ A aplicação possui três funcionalidades principais, organizadas em abas:
 3. **Tabela de Distâncias** — a partir de uma região de origem escolhida, lista o custo até todas as demais regiões, ordenadas da mais barata para a mais cara.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![Exemplo 1 - Projeto](assets/calculoRota.png)
+![Exemplo 2 - Projeto](assets/grafoCompleto.png)
+![Exemplo 3 - Projeto](assets/tabelaDistancia.png)
+
 
 ## Instalação
 Linguagem: Python 3.10+<br>

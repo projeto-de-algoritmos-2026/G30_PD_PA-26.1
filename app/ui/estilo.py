@@ -36,7 +36,13 @@ def aplicar_estilo(root) -> ttk.Style:
     estilo.configure("Card.TLabel", background=COR_FUNDO_CARD, foreground=COR_TEXTO, font=("Segoe UI", 10, "bold"))
     estilo.configure("CardTexto.TLabel", background=COR_FUNDO_CARD, foreground=COR_TEXTO_SECUNDARIO)
 
-    estilo.configure("TCombobox", padding=6)
+    estilo.configure("TCombobox", padding=8)
+    estilo.configure("Campo.TCombobox", padding=(10, 8), arrowsize=16,
+                      fieldbackground=COR_FUNDO_CARD_CLARO, background=COR_FUNDO_CARD_CLARO)
+    estilo.map("Campo.TCombobox",
+               fieldbackground=[("readonly", COR_FUNDO_CARD_CLARO)],
+               background=[("readonly", COR_FUNDO_CARD_CLARO)],
+               foreground=[("readonly", COR_TEXTO)])
 
     estilo.configure("Primario.TButton", font=("Segoe UI", 10, "bold"), padding=10,
                       background=COR_PRIMARIA, foreground="white", borderwidth=0)

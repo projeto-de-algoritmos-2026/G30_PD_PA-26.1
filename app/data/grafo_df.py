@@ -19,10 +19,10 @@ GRAFO_DF: GrafoTipo = {
     "Riacho Fundo": [("Núcleo Bandeirante", 5), ("Riacho Fundo II", 6), ("Recanto das Emas", 8)],
     "Riacho Fundo II": [("Riacho Fundo", 6), ("Recanto das Emas", 5)],
     "Park Way": [("Núcleo Bandeirante", 6), ("Gama", 12), ("São Sebastião", 16)],
-    "Águas Claras": [("Guará", -2), ("Taguatinga", -3), ("Vicente Pires", 4)],
+    "Águas Claras": [("Taguatinga", -3), ("Vicente Pires", 4)],
     "Vicente Pires": [("Águas Claras", 4), ("Taguatinga", 5)],
     "Taguatinga": [
-        ("Águas Claras", -3), ("Vicente Pires", 5), ("Ceilândia", 6),
+        ("Vicente Pires", 5), ("Ceilândia", 6),
         ("Samambaia", 11), ("Brazlândia", 19),
     ],
     "Ceilândia": [("Taguatinga", 6), ("Brazlândia", 14), ("Samambaia", 8), ("Sol Nascente/Pôr do Sol", 5)],

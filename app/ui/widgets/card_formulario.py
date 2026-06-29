@@ -13,13 +13,30 @@ class CardFormulario(ttk.Frame):
         self._montar(regioes, on_calcular)
 
     def _montar(self, regioes: List[str], on_calcular: Callable[[], None]):
+        self.columnconfigure(1, weight=1)
+        self.columnconfigure(3, weight=1)
+
         ttk.Label(self, text="Origem", style="Card.TLabel").grid(row=0, column=0, padx=10, pady=10, sticky="w")
-        self.combo_origem = ttk.Combobox(self, values=regioes, state="readonly", width=24)
-        self.combo_origem.grid(row=0, column=1, padx=10, pady=10)
+        self.combo_origem = ttk.Combobox(
+            self,
+            values=regioes,
+            state="readonly",
+            width=28,
+            height=8,
+            style="Campo.TCombobox"
+        )
+        self.combo_origem.grid(row=0, column=1, padx=10, pady=10, sticky="ew")
 
         ttk.Label(self, text="Destino", style="Card.TLabel").grid(row=0, column=2, padx=10, pady=10, sticky="w")
-        self.combo_destino = ttk.Combobox(self, values=regioes, state="readonly", width=24)
-        self.combo_destino.grid(row=0, column=3, padx=10, pady=10)
+        self.combo_destino = ttk.Combobox(
+            self,
+            values=regioes,
+            state="readonly",
+            width=28,
+            height=8,
+            style="Campo.TCombobox"
+        )
+        self.combo_destino.grid(row=0, column=3, padx=10, pady=10, sticky="ew")
 
         self.botao_calcular = ttk.Button(self, text="Calcular rota", style="Primario.TButton", command=on_calcular)
         self.botao_calcular.grid(row=0, column=4, padx=(20, 10))

@@ -1,6 +1,6 @@
 from tkinter import ttk
 
-from app.services import rota_service
+from app.service import rota_service
 from app.ui.widgets.card_formulario import CardFormulario
 from app.ui.widgets.painel_resultado import PainelResultado
 from app.ui.widgets.canvas_grafo import CanvasCaminho

@@ -88,3 +88,5 @@ Após executar `python main.py`, a janela principal do RotaDF é aberta com trê
    - Clique em **Gerar tabela**.
    - Uma tabela é exibida com o custo da origem escolhida até todas as demais regiões do DF, ordenada da mais barata para a mais cara. Regiões inalcançáveis a partir da origem são indicadas como tal.
 
+## Video - Apresentação
+[![Assistir no YouTube](https://img.youtube.com/vi/Zhu1AUc3vI4/0.jpg)](https://www.youtube.com/watch?v=Zhu1AUc3vI4)
